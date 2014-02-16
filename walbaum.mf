@@ -1,0 +1,90 @@
+define_pixels(x_height, u, dp, o, crisp, tiny, fine, stem, vair, hair);
+curve := 1.2 stem;
+flare := 0.84[hair, stem];
+flareangle := 6;
+
+beginchar("c", 11.5u#, x_height#, dp#);
+  pickup pencircle scaled tiny;
+  penpos1(vair, 158);
+  penpos3(curve, 0);
+  penpos4(vair, -90);
+  penpos5(flare, flareangle);
+  
+  top y1r = 0.35x_height;
+  rt x1l = x5r + 0.04w;
+  
+  x2r = 0.45[rt x3r, lft x1r];
+  bot y2l = -o;
+  y2r = y2l + 0.05 [hair, stem];
+
+  lft x3l = 0;
+  y3 = x_height/2;
+
+  x4 = x2l = w/2;
+  top y4l = x_height + o;
+  
+  lft x5l = 0.3[w - stem - tiny, x4r];
+  bot y6 = 0.66h;
+  z6 = z5 + 0.55flare * dir (flareangle - 90);
+
+  penlabels(1,2,3,4,5,6);
+
+  filldraw z1l{dir -103}..tension 0.8 and 1..z2l{left}..tension 0.88..z3l{up}..tension 0.88..
+  z4l{right}..tension 1.1 and 1.1..z5r{dir (flareangle - 90)}..z6{left}..z5l{dir (flareangle + 90)}..tension 0.85..
+  z4r{left}..tension 0.88..z3r{down}..tension 0.88..z2r{right}..tension 0.85 and 1.1..{dir 77}z1r--cycle;
+endchar;
+
+beginchar("e", 11.5u#, x_height#, dp#);
+  pickup pencircle scaled tiny;
+  penpos1(vair, 158);
+  penpos3(curve, 0);
+  penpos4(vair, -90);
+  penpos5(curve, 180);
+  penpos6(vair, 90);
+
+  top y1r = 0.32x_height;
+  rt x1l = 0.98w;
+  
+  x2r = 0.45[rt x3r, lft x1r];
+  bot y2l = -o;
+  y2r = y2l + 0.05 [hair, stem];
+
+  lft x3l = 0;
+  y3 = 1/2x_height;
+
+  x4l = x2l = w/2;
+  top y4l = x_height + o;
+  
+  rt x5l = w;
+  y5 = y6 - vair/2;
+  
+  x6 = stem/2;
+  y6 = 0.60x_height;
+  penlabels(1,2,3,4,5,6);
+
+  filldraw z1l{dir -108}..tension 0.8 and 1..z2l{left}..tension 0.88..z3l{up}..tension 0.88..
+  z4l{right}..tension 0.95 and 0.75..z5l{down}--z6l--z6r--(x5r,y6r){dir 92}..z4r{left}..tension 0.87..
+  z3r{down}..tension 0.87..z2r{right}..tension 0.85 and 1.1..{dir 72}z1r--cycle;
+
+endchar;
+
+
+beginchar("o", 11.5u#, x_height#, dp#);
+  pickup pencircle scaled tiny;
+  penpos1(curve, 0);
+  penpos2(vair, 270);
+  penpos3(curve, 180);
+  penpos4(vair, 90);
+  
+  lft x3r = 0;
+  bot y2r = -o;
+  rt x1r = w;
+  top y4r = x_height+o;
+  x2 = x4 = w/2;
+  y1 = y3 = x_height/2;
+  penlabels(1,2,3,4);
+
+  filldraw z1r{down}..tension 0.88..z2r{left}..tension 0.88..z3r{up}..tension 0.88..z4r{right}..tension 0.88..{down}z1r--
+  z1l{up}..tension 0.88..z4l{left}..tension 0.88..z3l{down}..tension 0.88..z2l{right}..tension 0.88..{up}z1l--cycle;
+endchar;
+end

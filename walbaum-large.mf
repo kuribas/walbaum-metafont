@@ -1,0 +1,11 @@
+mode_setup;
+"Walbaum 17pt";
+x_height# := 428/36pt#;
+u# := 36/36pt#;
+dp# := 0;
+o# := 8.5/36pt#;
+crisp# := tiny# := fine# := 8.5/36pt#;
+stem# := 85/36pt# - fine#;
+hair# := vair# := 5/36pt#;
+
+input walbaum.mf;
