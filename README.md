@@ -3,8 +3,9 @@ Walbaum Metafont
 
 A digital version of Walbaum based on a scan of an original
 specimensheet using metafont.  The goal of this font-program is to
-demonstrate how parametric design can be used to create a family of
-typefaces from a single source.
+demonstrate how parametric design can be used to digitize an existing
+font.  It also shows how to create a family of typefaces from a single
+source.
 
 Compiling:
 ==========
