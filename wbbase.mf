@@ -1,0 +1,29 @@
+define_pixels(x_height, u, dp, o, crisp, tiny, fine, stem, vair, hair, jut);
+
+curve := 1.2 (stem + tiny) - tiny;
+flare := 0.88[hair, stem];
+flareangle := 6;
+slab := vair;
+dish := 1/7 slab;
+
+newinternal currentbreadth;
+vardef pos@#(expr b,d) =
+ if known b: if b<=currentbreadth: errmessage "bad pos"; fi fi
+ (x@#r-x@#l,y@#r-y@#l)=(b-currentbreadth,0) rotated d;
+ x@#=.5(x@#l+x@#r); y@#=.5(y@#l+y@#r) enddef;
+def numeric_pickup_ primary q =
+ currentpen:=pen_[q];
+ pen_lft:=pen_lft_[q];  pen_rt:=pen_rt_[q];
+ pen_top:=pen_top_[q];  pen_bot:=pen_bot_[q];
+ currentpen_path:=pen_path_[q];
+ if known breadth_[q]: currentbreadth:=breadth_[q]; fi enddef;
+
+def shiftdef(suffix $)(expr delta) =
+ vardef $ primary x = x+delta enddef enddef;
+
+forsuffixes $ = fine, crisp, tiny:
+  pickup pencircle scaled $;
+  $.nib := savepen;
+  breadth_[$.nib] = $;
+  forsuffixes $$ = lft, rt, top, bot: shiftdef($.$$, $$ 0); endfor
+endfor;

@@ -4,8 +4,10 @@ x_height# := 126/36pt#;
 u# := 10/36pt#;
 dp# := 0;
 o# := 2.5/36pt#;
-crisp# := tiny# := fine# := 10/36pt#;
-stem# := 25/36pt# - fine#;
-hair# := vair# := 2.5/36pt#;
-
+tiny# := fine# := 10/36pt#;
+crisp# := 7/36pt#;
+stem# := 25/36pt#;
+hair# := vair# := 14/36pt#;
+jut# := 17/36pt#;
+input wbbase.mf;
 input walbaum.mf;

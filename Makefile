@@ -6,7 +6,7 @@ walbaum-tiny.ps: walbaum-tiny.dvi
 walbaum-tiny.dvi: walbaum-tiny.2602gf
 	gftodvi walbaum-tiny.2602gf
 
-walbaum-tiny.2602gf: walbaum-tiny.mf
+walbaum-tiny.2602gf: walbaum-tiny.mf walbaum.mf wbbase.mf
 	mf walbaum-tiny.mf
 
 walbaum-large.ps: walbaum-large.dvi
@@ -15,5 +15,5 @@ walbaum-large.ps: walbaum-large.dvi
 walbaum-large.dvi: walbaum-large.2602gf
 	gftodvi walbaum-large.2602gf
 
-walbaum-large.2602gf: walbaum-large.mf
+walbaum-large.2602gf: walbaum-large.mf walbaum.mf wbbase.mf
 	mf walbaum-large.mf
