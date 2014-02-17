@@ -7,6 +7,12 @@ demonstrate how parametric design can be used to digitize an existing
 font.  It also shows how to create a family of typefaces from a single
 source.
 
+The scan was taken from [Walbaum Type Specimen in high resolution]
+(http://opentype.info/blog/2011/07/22/walbaum-type-specimen-in-high-resolution/)
+from the [Blog](http://opentype.info/blog/) of German designer and author Ralf Herrmann.
+This image is available under a
+[creative commons licence](http://creativecommons.org/licenses/by-nc/2.0/).
+
 Compiling:
 ==========
 
