@@ -1,5 +1,6 @@
 mode_setup;
 "Walbaum 5pt";
+asc_height# := 180/36pt#;
 x_height# := 126/36pt#;
 u# := 10/36pt#;
 dp# := 0;

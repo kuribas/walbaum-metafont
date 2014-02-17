@@ -1,12 +1,13 @@
 mode_setup;
 "Walbaum 48pt";
+asc_height# := 635/36pt#;
 x_height# := 428/36pt#;
 u# := 34/36pt#;
 dp# := 0;
 o# := 9/36pt#;
 tiny# := fine# := 14/36pt#;
 crisp# := 6/36pt#;
-stem# := 88/36pt#;
+stem# := 92/36pt#;
 hair# := vair# := 19/36pt#;
 jut# := 58/36pt#;
 input wbbase.mf;

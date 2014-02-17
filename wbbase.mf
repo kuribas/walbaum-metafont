@@ -1,4 +1,4 @@
-define_pixels(x_height, u, dp, o, crisp, tiny, fine, stem, vair, hair, jut);
+define_pixels(asc_height, x_height, u, dp, o, crisp, tiny, fine, stem, vair, hair, jut);
 
 curve := 1.2 (stem + tiny) - tiny;
 flare := 0.88[hair, stem];

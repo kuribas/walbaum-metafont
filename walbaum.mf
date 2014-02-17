@@ -102,13 +102,13 @@ beginchar("e", 12u#, x_height#, dp#);
   z3r{down}..tension 0.87..z2r{right}..tension 0.85 and 1.1..{dir 72}z1r--cycle;
 endchar;
 
-beginchar("i", jut#*2+stem#+fine#, x_height#, dp#);
+beginchar("i", jut#*2+stem#+fine#, asc_height#, dp#);
   pickup crisp.nib;
   trunk(1, jut, stem, x_height);
   lft x1b.a.l = 0;
   bot y1b.a.l = 0;
   filltrunk(1);
-  draw unitcircle scaled
+  fill fullcircle scaled (1.15stem) shifted (jut+stem/2, asc_height - 0.57stem);
 endchar;
 
 beginchar("o", 12u#, x_height#, dp#);
