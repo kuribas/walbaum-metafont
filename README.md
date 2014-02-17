@@ -30,5 +30,8 @@ to create a specimen for a large font size (17pt)
 LICENCE:
 ========
 
-The code for this demo is put in the public domain.  A more complete version
-maybe be available later under a more restrictive license.
+I disclaim any rights on the code for this demo by using the [CC0
+licence](http://creativecommons.org/about/cc0).  You can use this code
+in any way you see fit, include it in your work, modify it, etc...  A
+more complete version maybe be available later under a more
+restrictive license.
