@@ -14,9 +14,11 @@ You need metafont, gftodvi and dvips (they normal come with a
 tex/mf distribution).
 
 to create a specimen for a small font size (5pt)
+
    make walbaum-tiny.ps
 
 to create a specimen for a large font size (17pt)   
+
    make walbaum-large.ps
 
 LICENCE:
